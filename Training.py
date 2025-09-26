@@ -109,3 +109,9 @@ predictions = model.predict(X_validation)
 print(accuracy_score(Y_validation, predictions))
 print(confusion_matrix(Y_validation, predictions))
 print(classification_report(Y_validation, predictions))
+
+new_flower = [[7.1, 1.5, 1.4, 1.2]]
+
+# Predict the class
+prediction = model.predict(new_flower)
+print("Predicted class:", prediction[0])
